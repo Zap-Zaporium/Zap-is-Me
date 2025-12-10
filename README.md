@@ -12,18 +12,4 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zap-Z
 
 local window = library:CreateWindow("My Cool GUI")
 
-window:AddButton({
-    text = "Kill All",
-    callback = function()
-        print("Everyone died!")
-    end
-})
 
-window:AddToggle({
-    text = "God Mode",
-    state = true,        -- default on
-    flag = "godmode",    -- optional: save state
-    callback = function(value)
-        print("God Mode:", value)
-    end
-})
