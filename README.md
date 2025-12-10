@@ -1,4 +1,3 @@
-# Zap-is-Me
 # Zaporium — Neon Blue Minimalist GUI Library
 
 Simple, beautiful, reusable Roblox UI library.
@@ -13,7 +12,6 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zap-Z
 
 local window = library:CreateWindow("My Cool GUI")
 
-### Create a button
 window:AddButton({
     text = "Kill All",
     callback = function()
