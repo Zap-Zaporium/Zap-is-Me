@@ -81,7 +81,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
         BorderSizePixel = 0,
         Text = string.upper(holderTitle),
         TextSize = subHolder and 16 or 19,
-        Font = Enum.Font.GothamBold,
+        Font = Enum.Font.GothamBlack,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = parentTable.main
     })
