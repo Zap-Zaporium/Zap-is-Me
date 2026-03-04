@@ -489,8 +489,8 @@ local function createSlider(option, parent)
         Size = UDim2.new(1, 0, 0, 20),
         BackgroundTransparency = 1,
         Text = " " .. option.text,
-        TextSize = 17,
-        Font = Enum.Font.GothamBlack,
+        TextSize = 20,
+        Font = Enum.Font.GothamBold,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextXAlignment = Enum.TextXAlignment.Left,
         Parent = main
@@ -545,7 +545,7 @@ local function createSlider(option, parent)
         TextColor3 = Color3.fromRGB(235, 235, 235),
         TextSize = 15,
         TextWrapped = true,
-        Font = Enum.Font.GothamBlack,
+        Font = Enum.Font.GothamBold,
         Parent = valueRound
     })
     if option.min >= 0 then
@@ -666,7 +666,7 @@ local function createList(option, parent, holder)
         BackgroundTransparency = 1,
         Text = option.value,
         TextSize = 18,
-        Font = Enum.Font.GothamBlack,
+        Font = Enum.Font.GothamBold,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextXAlignment = Enum.TextXAlignment.Left,
         Parent = main
@@ -778,7 +778,7 @@ local function createList(option, parent, holder)
             Text = " " .. value,
             TextSize = 14,
             TextTransparency = self.open and 0 or 1,
-            Font = Enum.Font.GothamBlack,
+            Font = Enum.Font.GothamBold,
             TextColor3 = Color3.fromRGB(255, 255, 255),
             TextXAlignment = Enum.TextXAlignment.Left,
             Parent = content
