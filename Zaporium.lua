@@ -898,7 +898,7 @@ local function createBox(option, parent)
         BackgroundTransparency = 1,
         Text = option.text,
         TextSize = 14,
-        Font = Enum.Font.GothamBlack,
+        Font = Enum.Font.GothamBold,
         TextColor3 = Color3.fromRGB(100, 100, 120),
         TextXAlignment = Enum.TextXAlignment.Left,
         Parent = main
@@ -909,7 +909,7 @@ local function createBox(option, parent)
         BackgroundTransparency = 1,
         Text = option.value,
         TextSize = 18,
-        Font = Enum.Font.GothamBlack,
+        Font = Enum.Font.GothamBold,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextXAlignment = Enum.TextXAlignment.Left,
         TextWrapped = true,
