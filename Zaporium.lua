@@ -77,9 +77,9 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
         BackgroundTransparency = subHolder and 0 or 1,
         BackgroundColor3 = Color3.fromRGB(10, 10, 15),
         BorderSizePixel = 0,
-        Text = string.upper(holderTitle),
-        TextSize = subHolder and 16 or 17,
-        Font = Enum.Font.GothamBold,
+        Text = string.upper(holderTitle),           -- ALL CAPS
+        TextSize = subHolder and 16 or 19,          -- bigger title (19 instead of 17)
+        Font = Enum.Font.GothamBold,                -- thicker / bolder title
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = parentTable.main
     })
@@ -169,7 +169,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
         end
     end)
     function parentTable:SetTitle(newTitle)
-        title.Text = string.upper(tostring(newTitle))
+        title.Text = string.upper(tostring(newTitle))   -- keep ALL CAPS even when changed
     end
     return parentTable
 end
@@ -198,7 +198,7 @@ function createToggle(option, parent)
         BackgroundTransparency = 1,
         Text = " " .. option.text,
         TextSize = 17,
-        Font = Enum.Font.GothamBold,
+        Font = Enum.Font.GothamBlack,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextXAlignment = Enum.TextXAlignment.Left,
         Parent = parent.content
@@ -296,7 +296,7 @@ function createButton(option, parent)
         BackgroundTransparency = 1,
         Text = " " .. option.text,
         TextSize = 17,
-        Font = Enum.Font.GothamBold,
+        Font = Enum.Font.GothamBlack,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = parent.content
     })
@@ -1139,7 +1139,7 @@ local function createColorPickerWindow(option)
         BackgroundTransparency = 1,
         Text = "Reset",
         TextTransparency = 1,
-        Font = Enum.Font.Code,
+        Font = Enum.Font.GothamBlack,           -- changed to match style
         TextSize = 15,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = option.resetColor
@@ -1180,7 +1180,7 @@ local function createColorPickerWindow(option)
         BackgroundTransparency = 1,
         Text = "Undo",
         TextTransparency = 1,
-        Font = Enum.Font.Code,
+        Font = Enum.Font.GothamBlack,           -- changed
         TextSize = 15,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = option.undoColor
@@ -1227,7 +1227,7 @@ local function createColorPickerWindow(option)
         BackgroundTransparency = 1,
         Text = "Set",
         TextTransparency = 1,
-        Font = Enum.Font.Code,
+        Font = Enum.Font.GothamBlack,           -- changed
         TextSize = 15,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = option.setColor
@@ -1268,7 +1268,7 @@ local function createColorPickerWindow(option)
         BackgroundTransparency = 1,
         Text = "Rainbow",
         TextTransparency = 1,
-        Font = Enum.Font.Code,
+        Font = Enum.Font.GothamBlack,           -- changed
         TextSize = 15,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = option.rainbow
@@ -1317,7 +1317,7 @@ local function createColor(option, parent, holder)
         BackgroundTransparency = 1,
         Text = " " .. option.text,
         TextSize = 17,
-        Font = Enum.Font.GothamBold,
+        Font = Enum.Font.GothamBlack,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextXAlignment = Enum.TextXAlignment.Left,
         Parent = parent.content
