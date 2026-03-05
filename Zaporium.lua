@@ -68,7 +68,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
             ImageColor3 = parentTable.open and (subHolder and Color3.fromRGB(16, 16, 20) or Color3.fromRGB(10, 10, 15)) or (subHolder and Color3.fromRGB(10, 10, 15) or Color3.fromRGB(6, 6, 10)),
             ScaleType = Enum.ScaleType.Slice,
             SliceCenter = Rect.new(100, 100, 100, 100),
-            SliceScale = 0.05,
+            SliceScale = 0.04,
             Parent = parentTable.main
         })
     end
@@ -79,7 +79,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
         BorderSizePixel = 0,
         Text = string.upper(holderTitle),           -- ALL CAPS
         TextSize = subHolder and 16 or 17,          -- bigger title (19 instead of 17)
-        Font = Enum.Font.GothamBold,                -- thicker / bolder title
+        Font = Enum.Font.GothamBlack,                -- thicker / bolder title
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = parentTable.main
     })
