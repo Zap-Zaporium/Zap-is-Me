@@ -79,7 +79,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
         BorderSizePixel = 0,
         Text = string.upper(holderTitle),           -- ALL CAPS
         TextSize = subHolder and 16 or 17,          -- bigger title (19 instead of 17)
-        Font = Enum.Font.Anton,                -- thicker / bolder title
+        Font = Enum.Font.Gotham,                -- thicker / bolder title
         TextColor3 = Color3.fromRGB(255, 255, 255),
         Parent = parentTable.main
     })
